@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SaaS Dashboard Mockup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-900 text-white antialiased">
+    <!-- Dashboard Wrapper -->
+
+    <div
+      class="relative bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl shadow-black/50 overflow-hidden"
+    >
+      <!-- Top Nav -->
+      <div
+        class="flex items-center justify-between px-8 py-5 border-b border-white/10"
+      >
+        <h2 class="text-2xl font-bold text-amber-500">Workora</h2>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="hidden md:block bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-gray-400"
+          >
+            Search anything...
+          </div>
+          <div
+            class="w-9 h-9 rounded-full bg-amber-500/20 flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user-icon lucide-user text-amber-300"
+            >
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-8 space-y-8">
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <p class="text-sm text-gray-400">Revenue</p>
+            <h3 class="text-3xl font-bold mt-2">$48,290</h3>
+            <span class="text-green-400 text-sm">+12.4%</span>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <p class="text-sm text-gray-400">Active Users</p>
+            <h3 class="text-3xl font-bold mt-2">1,284</h3>
+            <span class="text-green-400 text-sm">+8.1%</span>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <p class="text-sm text-gray-400">Conversion</p>
+            <h3 class="text-3xl font-bold mt-2">4.8%</h3>
+            <span class="text-red-400 text-sm">-1.2%</span>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <p class="text-sm text-gray-400">Growth</p>
+            <h3 class="text-3xl font-bold mt-2">+12%</h3>
+            <span class="text-green-400 text-sm">Stable</span>
+          </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Line Chart -->
+          <div
+            class="md:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-6"
+          >
+            <h4 class="font-semibold mb-4">Revenue Overview</h4>
+            <svg viewBox="0 0 500 200" class="w-full">
+              <polyline
+                fill="none"
+                stroke="#f59e0b"
+                stroke-width="4"
+                points="0,160 80,120 160,140 240,80 320,90 400,40 500,60"
+              />
+            </svg>
+          </div>
+
+          <!-- Donut -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h4 class="font-semibold mb-4">Traffic Source</h4>
+            <div class="flex items-center justify-center h-full">
+              <div
+                class="w-32 h-32 rounded-full border-8 border-amber-500/80 border-r-white/10"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+          <h4 class="font-semibold mb-4">Recent Activity</h4>
+          <table class="w-full text-sm">
+            <thead class="text-gray-400">
+              <tr class="border-b border-white/10">
+                <th class="text-left py-2">User</th>
+                <th class="text-left">Status</th>
+                <th class="text-left">Date</th>
+                <th class="text-left">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-white/5">
+                <td class="py-3">John Doe</td>
+                <td><span class="text-green-400">Active</span></td>
+                <td>Jan 24</td>
+                <td>$120</td>
+              </tr>
+              <tr>
+                <td class="py-3">Sarah Kim</td>
+                <td><span class="text-yellow-400">Pending</span></td>
+                <td>Jan 23</td>
+                <td>$98</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

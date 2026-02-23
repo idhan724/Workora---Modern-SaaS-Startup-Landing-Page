@@ -1,0 +1,8 @@
+.swiper-slide {
+  width: 650px;
+}
+
+.active {
+  color: #d97706;
+  font-weight: 500;
+}
