@@ -5,7 +5,7 @@ It showcases key features, pricing plans, and testimonials, giving users a premi
 
 This landing page is built with **Tailwind CSS**, **Lucide Icons**, and **Swiper.js** for smooth animations and carousels.
 
-- 🔗 Live Demo:
+- 🔗 Live Demo: https://workora-modern-landing-page.vercel.app/
 - 📦 Repository: https://github.com/idhan724/Workora---Modern-SaaS-Startup-Landing-Page
 
 ---
